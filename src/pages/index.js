@@ -8,32 +8,29 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Easy to Use</>,
+    title: <>易于上手</>,
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        从环境配置开始，一步一步介绍入门需要的工具与知识。本文档试图覆盖从龙芯杯预赛到决赛、从 CPU 的设计到下板中的绝大部分细节。
       </>
     ),
   },
   {
-    title: <>Focus on What Matters</>,
+    title: <>最佳实践</>,
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        由前人遇到的经验教训总结而成。这些文档不仅告诉你什么是对的，什么是更好的；还会说哪些方法不太可行，以及其中的缘由。
       </>
     ),
   },
   {
-    title: <>Powered by React</>,
+    title: <>海纳百川</>,
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        本文档不仅记录了编写者个人的经验体会，也会链接到其他人已经已有的好的内容上。这也是本文档的目标之一：通过搜索，你能从这里跳转到互联网中其他的闪烁着光芒的地方。
       </>
     ),
   },
@@ -59,7 +56,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">

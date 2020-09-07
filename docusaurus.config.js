@@ -1,14 +1,14 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: '龙芯杯指北',
+  tagline: 'What I cannot create, I do not understand.',
+  url: 'nscscc.fkynjyq.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'fky2015', // Usually your GitHub org/user name.
+  projectName: 'roadmap-of-nscscc', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: '龙芯杯指北',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -17,12 +17,12 @@ module.exports = {
         {
           to: 'docs/doc1',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: '文档',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        // {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/fky2015/roadmap-of-nscscc',
           label: 'GitHub',
           position: 'right',
         },
