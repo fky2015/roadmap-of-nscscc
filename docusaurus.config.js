@@ -1,7 +1,7 @@
 module.exports = {
   title: '龙芯杯指北',
   tagline: 'What I cannot create, I do not understand.',
-  url: 'nscscc.fkynjyq.com',
+  url: 'https://nscscc.fkynjyq.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'fky2015', // Usually your GitHub org/user name.
