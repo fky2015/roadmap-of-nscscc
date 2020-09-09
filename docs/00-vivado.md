@@ -11,13 +11,11 @@ Vivado Design Suit 是 Xilinx 公司为硬件分析与设计而专门开发的�
 
 Vivado 的安装并不复杂。首先，我们需要获取 Vivado 2019.2 的安装包。具体来说，登录 Xilinx中国 的官方网站，依次选择产品-硬件开发-Vivado Design Suite即可进入官方下载界面。点击下方的 Vivado Design Suite HLx 版本 “立即下载”按钮，即可进入版本选择界面。选择 2019.2 版本后，即可获得对应的[下载链接](https://china.xilinx.com/support/download/index.html/content/xilinx/zh/downloadNav/vivado-design-tools/2019-2.html)（注意区分更新包与本体的区别）,如下图。
 
-![](https://github.com/fky2015/roadmap-of-nscscc/blob/master/static/img/1.png)
+![](https://pic.downk.cc/item/5f58706f160a154a67e09ca3.png)
 
 官方提供的下载方式为下载器模式，下载 .exe 格式的下载器（Xilinx Unified Installer 2019.2: Windows Self Extracting Web Installer）并执行后，会自动完成一系列的下载、安装流程。
 
-:::note
 由于Vivado本体安装包较大（约30GB），官网下载可能较慢，因此附上如下两种其他的下载方式：
 - 百度网盘：https://pan.baidu.com/s/1OsccE8Vv5kdBpaipLVDzzA 提取码：2333
 - 蒲公英PT站（推荐）：请自行在站内搜索
-:::
 
