@@ -37,7 +37,7 @@ VS Code 本身具有丰富的拓展插件，通过合理的组合，我们可以
 
 检查一下。我们打开 PowerShell，输入 `xvlog -version`，如果出现了 Vivado Simulator 的版本信息，表明我们的环境变量配置成功。
 
-![图片3](https://pic.downk.cc/item/5f59a657160a154a6794a6bc.png)
+![图片3](https://pic.downk.cc/item/5f59a757160a154a679511e3.png)
 
 之后，我们在 VS Code 的配置项目中找到 `Verilog > Linting: Linter` 的配置项，将其修改为 `xvlog` 即可：
 
