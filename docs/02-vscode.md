@@ -33,15 +33,15 @@ VS Code 本身具有丰富的拓展插件，通过合理的组合，我们可以
 
 之后，为了加入 Vivado 的实时代码检查功能，我们需要配置 `xvlog` 的环境变量。我们找到 Vivado 的安装路径，将 `bin` 文件夹的路径（一般是 `C:\Xilinx\Vivado\2017.2\bin`）加入环境变量
 
-![](https://i.loli.net/2019/08/27/DsFZ3LbV4N2lSzP.png)
+![](https://pic.downk.cc/item/5f59a19c160a154a67926a22.jpg)
 
 检查一下。我们打开 PowerShell，输入 `xvlog -version`，如果出现了 Vivado Simulator 的版本信息，表明我们的环境变量配置成功。
 
-![](https://i.loli.net/2019/08/27/nfWDC5SG8y1Mrea.png)
+![](https://pic.downk.cc/item/5f59a1d3160a154a67928564.jpg)
 
 之后，我们在 VS Code 的配置项目中找到 `Verilog > Linting: Linter` 的配置项，将其修改为 `xvlog` 即可：
 
-![](https://i.loli.net/2019/08/27/6UXS9iZ7QmFNVaA.png)
+![](https://pic.downk.cc/item/5f59a1dd160a154a67928948.jpg)
 
 为了能够配置 Verilog 的自动补全等功能，我们需要安装 `universal-ctags`。使用 scoop 包管理，我们在 Windows 上面直接输入：
 
@@ -53,7 +53,7 @@ scoop install universal-ctags
 
 ### Verilog 代码自动格式化插件
 
-![](https://i.loli.net/2019/08/27/QWiVmlJBOKZD6Fo.png)
+![](https://pic.downk.cc/item/5f59a1f2160a154a679290fe.jpg)
 
 为了让 VS Code 能够自动格式化 Verilog 代码，我们需要安装：[verilog-formatter](https://marketplace.visualstudio.com/items?itemName=IsaacT.verilog-formatter) 这一插件。
 
@@ -61,7 +61,7 @@ scoop install universal-ctags
 
 之后，我们在 VS Code 中找到 `Verilog-formatter > Istyle: Path`，并将刚刚的 `iStyle.exe` 的文件路径填入即可。之后，我们在 `Verilog-formatter > Istyle: Style` 配置项处选择一个格式化的风格（比如 `K&R`），就可以通过快捷键 `Ctrl + Shift + P` 并输入 Format Document 来格式化 Verilog 代码。
 
-![](https://i.loli.net/2019/08/27/N4WLjS6DUpJwG3d.png)
+![](https://pic.downk.cc/item/5f59a208160a154a679299cc.jpg)
 
 ## 将 VS Code 作为 Vivado 的默认代码编辑器
 
