@@ -1,8 +1,6 @@
-
 ---
-id: environment-test
+id: verilog-best-practice
 title: Verilog 语法摘记
-sidebar_label: Vivado 安装
 ---
 
 ## Verilog基本语法

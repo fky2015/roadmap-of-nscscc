@@ -1,7 +1,6 @@
 ---
 id: vscode
 title: 配置 VSCode 作为代码编辑器
-sidebar_label: 配置 VSCode 作为代码编辑器
 ---
 
 :::note

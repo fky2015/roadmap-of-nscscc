@@ -1,7 +1,6 @@
 ---
-id: environment-preparation
+id: create-vivado-project
 title: 在 Vivado 中创建第一个项目
-sidebar_label: Vivado 安装
 ---
 
 ## 何为Vivado项目？

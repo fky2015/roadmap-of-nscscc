@@ -1,7 +1,6 @@
 ---
-id: environment-preparation
+id: install-vivado
 title: Vivado 安装
-sidebar_label: Vivado 安装
 ---
 > Vivado 设计套件，是 FPGA 厂商赛灵思公司 2012 年发布的集成设计环境。包括高度集成的设计环境和新一代从系统到 IC 级的工具。这也是一个基 于AMBA AXI4 互联规范、IP-XACT IP 封装元数据、工具命令语言（TCL）、Synopsys 系统约束（SDC）以及其它有助于根据客户需求量身定制设计流程并符合业界标准的开放式环境。
 
