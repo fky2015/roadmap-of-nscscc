@@ -1,13 +1,11 @@
 ---
 id: vscode
 title: 配置 VSCode 作为代码编辑器
-key: 1a7f352f-0b28-48be-8453-7367bd609cc3
-article_header:
-  type: cover
-  image:
-    src: /assets/img/posts/2020-09-07-vscode.png
-sharing: true
 ---
+
+:::note
+本文转自[HDL 的现代代码编辑体验——配置 VS Code 的 Verilog 开发环境](https://blog.fkynjyq.com/write-verilog-with-vscode/)，已获得作者授权。
+:::
 
 
 ## TL;DR
@@ -16,7 +14,7 @@ Vivado 默认的代码编辑器对 Verilog 有着很好的代码提示能力，�
 
 因此我们可以采用 VS Code 作为代码编辑器，来更快的进行代码编写和初步的语法检查，并利用其更强大的版本控制、共享协作等功能来加速 Verilog 代码开发。
 
-![](../assets/img/posts/2020-09-07-vscode.png)
+![](../static/img/vscode/2020-09-07-vscode.png)
 *使用 VS Code 编写 Verilog 项目*
 
 <!--more-->
@@ -27,7 +25,7 @@ Vivado 默认的代码编辑器对 Verilog 有着很好的代码提示能力，�
 
 首先我们安装 [Verilog-HDL/SystemVerilog/Bluespec SystemVerilog](https://marketplace.visualstudio.com/items?itemName=mshr-h.VerilogHDL)。
 
-![](../assets/img/posts/2020-09-07-verilog-HDL-support.png)
+![](../static/img/vscode/2020-09-07-verilog-HDL-support.png)
 *Verilog-HDL/SystemVerilog/Bluespec SystemVerilog HDL 语言支持插件*
 
 它能够为包括 Verilog 在内的多种 HDL 提供语法高亮、常用代码片段、符号补全以及代码分析的功能。
@@ -62,7 +60,7 @@ Vivado Simulator 2019.2
 
 最后，在 VS Code 的用户设置中 `Verilog > Linting: Linter` 一项选择 `xvlog`:
 
-![](../assets/img/posts/2020-09-07-xvlog.png)
+![](../static/img/vscode/2020-09-07-xvlog.png)
 *配置 xvlog 为 linter*
 
 #### Verilator 安装与配置
@@ -85,12 +83,12 @@ Windows Subsystem for Linux（简称 WSL ）是一个在Windows 10上能够运�
 
 因此在 WSL 中，安装 `Verilator` 就像在 Linux 中安装一样轻松。
 
-![](../assets/img/posts/2020-09-07-wsl.png)
+![](../static/img/vscode/2020-09-07-wsl.png)
 *以 Arch Linux 子系统为例*
 
 最后在 VSCode 中，除了配置 `Verilog > Linting: Linter` 为 `verilator` 之外；还需要开启 `Verilog > Linting > Verilator: Use WSL`：
 
-![](../assets/img/posts/2020-09-07-verilator-in-wsl.png)
+![](../static/img/vscode/2020-09-07-verilator-in-wsl.png)
 *配置 Verilator 为 linter*
 
 ##### 基于 Cygwin 编译 Verilator（已废弃）
@@ -140,7 +138,7 @@ Verilator 4.036 2020-06-06 rev v4.034-208-g04c0fc8aa
 
 然后在 VS Code 中配置为 linter：
 
-![](../assets/img/posts/2020-09-07-verilator-as-linter.png)
+![](../static/img/vscode/2020-09-07-verilator-as-linter.png)
 *配置 Verilator 为 linter*
 
 
@@ -181,7 +179,7 @@ Verilator 4.036 2020-06-06 rev v4.034-208-g04c0fc8aa
 
 接下来我们需要安装 [verilog-formatter](https://marketplace.visualstudio.com/items?itemName=IsaacT.verilog-formatter) 来进行格式化。
 
-![](../assets/img/posts/2020-09-07-verilog-formatter.png)
+![](../static/img/vscode/2020-09-07-verilog-formatter.png)
 *verilog-formatter 代码格式化插件*
 
 除此之外，我们需要下载 [编译后的 iStyle](https://github.com/0qinghao/istyle-verilog-formatter/releases) 或者 [iStyle 源代码](https://github.com/thomasrussellmurphy/istyle-verilog-formatter/releases)并手动编译。
@@ -190,7 +188,7 @@ Verilator 4.036 2020-06-06 rev v4.034-208-g04c0fc8aa
 
 另外在下方的 `Verilog-formatter > Istyle: Style` 一项，你可以选择多种格式化方式，在这里我推荐 `GNU`:
 
-![](../assets/img/posts/2020-09-07-istyle-gnu.png)
+![](../static/img/vscode/2020-09-07-istyle-gnu.png)
 *GNU 代码格式化风格*
 
 之后在 VS Code 中，每当调用 `Format Document` 命令，当前文件就会进行格式化（我配置了快捷键 `Ctrl + Shift + I`）。
@@ -210,7 +208,7 @@ Verilator 4.036 2020-06-06 rev v4.034-208-g04c0fc8aa
 ❯ verilator --lint-only -Wall <你的顶层文件>.v
 ```
 
-![](../assets/img/posts/2020-09-12-verilator-in-cli.png)
+![](../static/img/vscode/2020-09-12-verilator-in-cli.png)
 
 
 ## 为什么不推荐使用 VS Code 替带 Vivado 的默认编辑器
@@ -254,7 +252,7 @@ Verilator 4.036 2020-06-06 rev v4.034-208-g04c0fc8aa
 
 然后在 Vivado 中通过 `Add Directory` 将整个 `src` 目录添加到 Vivado 开发环境中，Vivado 将自动寻找可能的顶层文件，并自动梳理文件间依赖关系。
 
-![](../assets/img/posts/2020-09-07-vivado-add-directory.png)
+![](../static/img/vscode/2020-09-07-vivado-add-directory.png)
 *添加整个 `src` 文件夹中的代码*
 
 注意 Vivado 对文件更新的监听规则为：自动监听已经加入的文件，不监听新创建的文件。也就是说：**如果你新建了一个 Verilog 文件，则需要再次添加入 Vivado 项目中**。
@@ -270,7 +268,7 @@ Verilator 4.036 2020-06-06 rev v4.034-208-g04c0fc8aa
 
 通过 [gitignore.io](https://www.toptal.com/developers/gitignore)，你可以快速生成一份可用的 [`.gitignore` 文件](https://www.toptal.com/developers/gitignore/api/vivado,visualstudiocode)，或者基于此进行改进。
 
-![](../assets/img/posts/2020-09-07-gitignore.png)
+![](../static/img/vscode/2020-09-07-gitignore.png)
 *gitignore.io （现已更名）*
 
 ## 如果你是 Vim 用户（与主题无关）
