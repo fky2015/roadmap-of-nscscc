@@ -36,3 +36,13 @@ title: This is Document Number 3
 ### 参考资料
 
 - [Verilog语法教程](https://www.chipverify.com/verilog/verilog-initial-block#syntax)
+
+### 几本参考书
+
+- 《自己动手写CPU》雷思磊
+
+- 《超标量处理器设计》姚永斌
+
+- 《计算机原理与设计 Verilog HDL版》李亚民
+
+- 《计算机组成与设计》 David A. Patterson
